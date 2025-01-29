@@ -1,6 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let newGame = 0;
 let friendsList = [];
+let secretFriend = '';
 
 
 function agregarAmigo() {
@@ -22,4 +23,14 @@ function agregarAmigo() {
 
 function cleanBox() {
     document.querySelector('#amigo').value = '';
+}
+
+function sortearAmigo() {
+    //Generar un numero aleatorio teniendo en cuenta el tamaño de la lista
+    //let generateNumber = Math.floor(Math.random()*friendsList.length);
+    // El amigo secreto es el nombre q ocupa el elemento en la posición del número aleatorio generado
+    //secretFriend = friendsList[generateNumber];
+    secretFriend = friendsList[Math.floor(Math.random()*friendsList.length)];
+    console.log(secretFriend);
+    
 }
