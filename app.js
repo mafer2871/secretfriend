@@ -8,8 +8,11 @@ function agregarAmigo() {
     let friendName = document.getElementById('amigo').value;
     if (friendName) {
         friendsList.push(friendName);
-		console.log(friendsList);
-
+        // crear elemento <li> para la lista de html
+        const li = document.createElement('li');
+        li.textContent = friendName;
+        // Agregar el nuevo <li> a la lista en pantalla
+        listaAmigos.appendChild(li);
     } else {
         alert('Por favor ingrese un nombre');
     }
