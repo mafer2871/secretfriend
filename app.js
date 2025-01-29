@@ -10,12 +10,7 @@ function agregarAmigo() {
     if (friendName) {
         friendsList.push(friendName);
         showFinalLists(listaAmigos, friendName);
-        /*
-        // crear elemento <li> para la lista de html
-        const li = document.createElement('li');
-        li.textContent = friendName;
-        // Agregar el nuevo <li> a la lista en pantalla
-        listaAmigos.appendChild(li);*/
+    
     } else {
         alert('Por favor ingrese un nombre');
     }
@@ -28,14 +23,14 @@ function cleanBox() {
 }
 
 function sortearAmigo() {
-    //Generar un numero aleatorio teniendo en cuenta el tamaño de la lista
-    //let generateNumber = Math.floor(Math.random()*friendsList.length);
-    // El amigo secreto es el nombre q ocupa el elemento en la posición del número aleatorio generado
-    //secretFriend = friendsList[generateNumber];
+    /* De acuerdo al tamaño de la lista de amigos, genera un numero aleatorio 
+    y busca en la lista el elemento en esa posición */
     secretFriend = friendsList[Math.floor(Math.random()*friendsList.length)];
     let chain = `Tu amigo secreto sorteado es ${secretFriend}`;
+    // Limpia de la pantalla la lista de amigos
+    const listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = '';
     showFinalLists(resultado,chain);
-    //console.log(secretFriend);
     
 }
 
@@ -44,5 +39,4 @@ function showFinalLists(lista, valor) {
     let li = document.createElement('li');
     li.textContent = valor;
     lista.appendChild(li);
-
 }
