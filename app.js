@@ -14,7 +14,6 @@ function agregarAmigo() {
         alert('Por favor ingrese un nombre de amig@');
     }
     cleanBox();
-
 }
 
 function cleanBox() {
