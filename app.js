@@ -2,23 +2,30 @@
 let friendsList = [];
 let secretFriend = '';
 let numbersList = [];
+let gameStarted = false;
 
 
 
 function agregarAmigo() {
-    // Validar q el nombre no sea vacio
-    let validCharacters = /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/; // Solo letras y espacios
-    let friendName = firstCapital(document.getElementById('amigo').value.trim());
-    
-    if (friendName == '' || !validCharacters.test(friendName)) {
-        alert('Nombre inconsistente.  Por favor ingrese un nombre de amig@ ');  
+
+    // Impedir q se agreguen nombres a lista hasta no terminar este sorteo
+    if (gameStarted){
+        alert('No se puede ingresar más nombres hasta terminar este sorteo');
     } else {
-        friendsList.push(friendName);
-        console.log(friendsList);
-        showFinalLists(listaAmigos, friendName);
+        // Validar q el nombre no sea vacio o tenga números
+        let validCharacters = /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/; // Solo letras y espacios
+        let friendName = firstCapital(document.getElementById('amigo').value.trim());
+        
+        if (friendName == '' || !validCharacters.test(friendName)) {
+            alert('Nombre inconsistente.  Por favor ingrese un nombre de amig@ ');  
+        } else {
+            friendsList.push(friendName);
+            console.log(friendsList);
+            showFinalLists(listaAmigos, friendName);
+        }
+        cleanBox();
     }
-    cleanBox();
-}
+} //fin agregarAmigo
 
 function cleanBox() {
     document.querySelector('#amigo').value = '';
@@ -28,7 +35,7 @@ function cleanAmigos() {
     // Limpia de la pantalla la lista de amigos
     const listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = '';
-}
+} //fin cleanAmigos
 
 
 function sortearAmigo() {
@@ -36,6 +43,7 @@ function sortearAmigo() {
     if (friendsList.length < 2) {
         alert('Debe de haber al menos dos amigos para sortear');
     } else {
+        gameStarted = true;
         secretFriend = generateFriendName();
         if (secretFriend) {
             let chain = `Tu amigo secreto sorteado es ${secretFriend}`;
@@ -44,7 +52,7 @@ function sortearAmigo() {
             showFinalLists(resultado,chain);
         }
     }
-}
+} //fin sortearAmigo
 
 function generateFriendName() {
     let generatedNumber = Math.floor(Math.random()*friendsList.length);
@@ -57,8 +65,7 @@ function generateFriendName() {
         }, 1000);
 
     } else {
- 
-        // Validar si el número ya se ha generado, si ya existe se debe volver a generar, sino guardar en la lista
+        // Validar para no repetir indices 
         if (numbersList.includes(generatedNumber)) { 
             return generateFriendName();
         } else {
@@ -67,17 +74,17 @@ function generateFriendName() {
             return friendsList[generatedNumber];
         }   
     }
-}
-
+} // fin generateFriendName
 
 function showFinalLists(lista, valor) {
     // Se usa para mostrar en pantalla la lista de amigos y el amigo secreto
     let li = document.createElement('li');
     li.textContent = valor;
     lista.appendChild(li);
-}
+} // fin showFinalLists
 
-function firstCapital(cadena) {
+function firstCapital(cadena) { 
+    // Coloca la primera letra mayúscula
     if (cadena.length === 0) return ''; // Si la cadena está vacía, devolverla tal cual.
     return cadena.charAt(0).toUpperCase() + cadena.slice(1);
-}
+} //fin firstCapital
