@@ -1,7 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-let newGame = 0;
 let friendsList = [];
 let secretFriend = '';
+let numbersList = [];
 
 
 function agregarAmigo() {
@@ -26,14 +26,36 @@ function cleanAmigos() {
     listaAmigos.innerHTML = '';
 }
 
+
 function sortearAmigo() {
-    /* De acuerdo al tamaño de la lista de amigos, genera un numero aleatorio 
-    y busca en la lista el elemento en esa posición */
-    secretFriend = friendsList[Math.floor(Math.random()*friendsList.length)];
-    let chain = `Tu amigo secreto sorteado es ${secretFriend}`;
-    cleanAmigos();
-    showFinalLists(resultado,chain);
+    secretFriend = generateFriendName();
+    if (secretFriend) {
+        let chain = `Tu amigo secreto sorteado es ${secretFriend}`;
+        cleanAmigos();
+        showFinalLists(resultado,chain);
+    }
 }
+
+function generateFriendName() {
+    let generatedNumber = Math.floor(Math.random()*friendsList.length);
+    
+    //Controlar si se han sorteado todos los amigos
+    if (numbersList.length == friendsList.length) {
+		alert('Ya se sortearon todos los amigos registrados');
+
+    } else {
+ 
+        // Validar si el número ya se ha generado, si ya existe se debe volver a generar, sino guardar en la lista
+        if (numbersList.includes(generatedNumber)) { 
+            return generateFriendName();
+        } else {
+            numbersList.push(generatedNumber);
+            console.log(numbersList);
+            return friendsList[generatedNumber];
+        }   
+    }
+}
+
 
 function showFinalLists(lista, valor) {
     // Se usa para mostrar en pantalla la lista de amigos y el amigo secreto
