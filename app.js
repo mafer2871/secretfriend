@@ -32,12 +32,17 @@ function cleanAmigos() {
 
 
 function sortearAmigo() {
-    secretFriend = generateFriendName();
-    if (secretFriend) {
-        let chain = `Tu amigo secreto sorteado es ${secretFriend}`;
-        cleanAmigos();
-        resultado.innerHTML = "";
-        showFinalLists(resultado,chain);
+    // Para realizar el sorteo debe haber al menos 2 amigos
+    if (friendsList.length < 2) {
+        alert('Debe de haber al menos dos amigos para sortear');
+    } else {
+        secretFriend = generateFriendName();
+        if (secretFriend) {
+            let chain = `Tu amigo secreto sorteado es ${secretFriend}`;
+            cleanAmigos();
+            resultado.innerHTML = "";
+            showFinalLists(resultado,chain);
+        }
     }
 }
 
@@ -46,7 +51,10 @@ function generateFriendName() {
     
     //Controlar si se han sorteado todos los amigos
     if (numbersList.length == friendsList.length) {
-		alert('Ya se sortearon todos los amigos registrados');
+		alert('Ya se sortearon todos los amigos registrados. El juego se reiniciará automáticamente');
+        setTimeout(() => {
+            location.reload();
+        }, 1000);
 
     } else {
  
