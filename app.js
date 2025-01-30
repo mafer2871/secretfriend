@@ -4,14 +4,18 @@ let secretFriend = '';
 let numbersList = [];
 
 
+
 function agregarAmigo() {
     // Validar q el nombre no sea vacio
-    let friendName = firstCapital(document.getElementById('amigo').value);
-    if (friendName) {
-        friendsList.push(friendName);
-        showFinalLists(listaAmigos, friendName);   
+    let validCharacters = /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/; // Solo letras y espacios
+    let friendName = firstCapital(document.getElementById('amigo').value.trim());
+    
+    if (friendName == '' || !validCharacters.test(friendName)) {
+        alert('Nombre inconsistente.  Por favor ingrese un nombre de amig@ ');  
     } else {
-        alert('Por favor ingrese un nombre de amig@');
+        friendsList.push(friendName);
+        console.log(friendsList);
+        showFinalLists(listaAmigos, friendName);
     }
     cleanBox();
 }
@@ -32,6 +36,7 @@ function sortearAmigo() {
     if (secretFriend) {
         let chain = `Tu amigo secreto sorteado es ${secretFriend}`;
         cleanAmigos();
+        resultado.innerHTML = "";
         showFinalLists(resultado,chain);
     }
 }
