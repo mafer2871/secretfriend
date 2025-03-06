@@ -26,7 +26,7 @@ Este programa está desarrollado en **JavaScript** y **HTML**.
 
 La aplicación **Secret Friend** se puede usar directamente en línea sin necesidad de instalar nada en tu computadora. Solo sigue estos pasos:
 
-### Opción 1: Jugar en línea
+### Opción 1: 🌐 Jugar en línea ⌨️
 
 Accede a la siguiente URL para jugar directamente desde tu navegador:
 
@@ -34,7 +34,7 @@ Accede a la siguiente URL para jugar directamente desde tu navegador:
 
   ¡Solo haz clic en el enlace y comienza a disfrutar del juego!
 
-### Opción 2: Ejecutar localmente (si prefieres hacerlo en tu PC)
+### Opción 2:    💻 Ejecutar localmente (si prefieres hacerlo en tu PC) 🖱️
 
 Si prefieres ejecutar el juego de manera local, puedes seguir estos pasos:
 
@@ -69,15 +69,13 @@ Si prefieres ejecutar el juego de manera local, puedes seguir estos pasos:
 4. **Disfruta de la aplicación:**
    - Ahora puedes usar la aplicación directamente desde tu navegador. Ingresa los nombres de tus amigos y comienza a jugar al amigo secreto.
 
-### ¡Eso es todo!
+### ¡👍 Eso es todo 👍!
 
 Puedes elegir la opción que prefieras. Si solo quieres jugar rápidamente, usa la opción en línea. Si deseas ejecutar el juego localmente, puedes hacerlo con los pasos anteriores.
 
 
-
-
     
-## Instrucciones de juego
+## 🎮 Cómo jugar🕹️
 
 1. **Ingresar los nombres de tus amigos:**
    - En la interfaz de la aplicación, encontrarás un campo para ingresar los nombres de tus amigos. 
@@ -96,7 +94,7 @@ Puedes elegir la opción que prefieras. Si solo quieres jugar rápidamente, usa 
 
 ¡Diviértete jugando a Secret Friend!
 
-## Contribuciones
+## 👨‍💻 Contribuciones 👩‍💻
 
 ¡Gracias por tu interés en contribuir a este proyecto! Si deseas colaborar, sigue estos pasos:
 
@@ -111,15 +109,13 @@ Puedes elegir la opción que prefieras. Si solo quieres jugar rápidamente, usa 
      git clone 
 
 
-
 ## Licencia
 
 Este proyecto está bajo la **Licencia MIT**. Esto significa que puedes usar, modificar y distribuir el código de este repositorio de manera libre, siempre y cuando incluyas una copia de esta licencia en tu proyecto derivado.
 
 ### Licencia MIT
 
-
-## Autor
+## ✍️ Autor🧑‍💻
 
 - [Mafer2871.](https://github.com/mafer2871)
 
