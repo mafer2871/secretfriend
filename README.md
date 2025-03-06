@@ -84,11 +84,20 @@ Puedes elegir la opción que prefieras. Si solo quieres jugar rápidamente, usa 
    - En la interfaz de la aplicación, encontrarás un campo para ingresar los nombres de tus amigos. 
    - Escribe el nombre de un amigo y haz clic en el botón **Adicionar** para agregarlo a la lista de amigos. Puedes añadir tantos nombres como desees repitiendo este paso.
 
+     ![secretfriend_addfriend](docs/images/secretfriend_addfriend.png)
+
 2. **Ver la lista de amigos:**
    - A medida que vayas añadiendo nombres, estos se irán mostrando en una lista en pantalla, permitiéndote revisar los amigos que has agregado hasta el momento.
 
+     ![secretfriend_sortfriend](docs/images/secretfriend_sortfriend.png)
+
+
 3. **Iniciar el sorteo:**
    - Una vez que hayas añadido todos los amigos a la lista, haz clic en el botón **Sortear Amigo** para iniciar el sorteo.
+
+     ![secretfriend_friendlist](docs/images/secretfriend_friendlist.png)
+
+     
    - Cada vez que presiones el botón **Sortear Amigo**, se mostrará un amigo con su respectivo amigo secreto de forma aleatoria en pantalla.
    - Este proceso se repetirá hasta que todos los amigos hayan sido sorteados.
 
