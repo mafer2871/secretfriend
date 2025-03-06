@@ -84,7 +84,7 @@ Puedes elegir la opción que prefieras. Si solo quieres jugar rápidamente, usa 
    - En la interfaz de la aplicación, encontrarás un campo para ingresar los nombres de tus amigos. 
    - Escribe el nombre de un amigo y haz clic en el botón **Adicionar** para agregarlo a la lista de amigos. Puedes añadir tantos nombres como desees repitiendo este paso.
 
-     ![secretfriend_addfriend](docs/images/secretfriend_addfriend.png)
+     ![secretfriend_addfriend](docs/Images/secretfriend_addfriend.png)
 
 2. **Ver la lista de amigos:**
    - A medida que vayas añadiendo nombres, estos se irán mostrando en una lista en pantalla, permitiéndote revisar los amigos que has agregado hasta el momento.
