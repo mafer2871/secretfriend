@@ -121,6 +121,6 @@ Este proyecto está bajo la **Licencia MIT**. Esto significa que puedes usar, mo
 
 ## Autor
 
-- [Maria Fernanda R.](https://github.com/mafer2871)
+- [Mafer2871.](https://github.com/mafer2871)
 
 Si tienes alguna pregunta o sugerencia sobre el proyecto, no dudes en contactar conmigo a través de GitHub.
