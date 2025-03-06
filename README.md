@@ -99,7 +99,10 @@ Puedes elegir la opción que prefieras. Si solo quieres jugar rápidamente, usa 
 
      
    - Cada vez que presiones el botón **Sortear Amigo**, se mostrará un amigo con su respectivo amigo secreto de forma aleatoria en pantalla.
-   - Este proceso se repetirá hasta que todos los amigos hayan sido sorteados.
+
+     ![secretfriend_friendresult](docs/Images/secretfriend_sortfriendlist.png)
+     
+   - Este proceso se repetirá hasta que todos los amigos hayan sido sorteados, momento en el cual te aparecerá un mensaje informativo.
 
 4. **Reiniciar el juego:**
    - Si deseas reiniciar el juego, puedes hacerlo en cualquier momento presionando el botón **Reiniciar**. Esto limpiará la lista de amigos y te permitirá comenzar de nuevo.
