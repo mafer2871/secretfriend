@@ -89,13 +89,13 @@ Puedes elegir la opción que prefieras. Si solo quieres jugar rápidamente, usa 
 2. **Ver la lista de amigos:**
    - A medida que vayas añadiendo nombres, estos se irán mostrando en una lista en pantalla, permitiéndote revisar los amigos que has agregado hasta el momento.
 
-     ![secretfriend_sortfriend](docs/images/secretfriend_sortfriend.png)
+     ![secretfriend_sortfriend](docs/Images/secretfriend_sortfriend.png)
 
 
 3. **Iniciar el sorteo:**
    - Una vez que hayas añadido todos los amigos a la lista, haz clic en el botón **Sortear Amigo** para iniciar el sorteo.
 
-     ![secretfriend_friendlist](docs/images/secretfriend_friendlist.png)
+     ![secretfriend_friendlist](docs/Images/secretfriend_friendlist.png)
 
      
    - Cada vez que presiones el botón **Sortear Amigo**, se mostrará un amigo con su respectivo amigo secreto de forma aleatoria en pantalla.
