@@ -22,7 +22,7 @@ Este programa está desarrollado en **JavaScript** y **HTML**.
 - **JavaScript**: Para la lógica del juego.
 
 
-## Instalación
+##  🧩 Instalación
 
 La aplicación **Secret Friend** se puede usar directamente en línea sin necesidad de instalar nada en tu computadora. Solo sigue estos pasos:
 
