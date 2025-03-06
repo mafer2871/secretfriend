@@ -3,7 +3,7 @@
 
 ## Descripción
 
-El juego **Secret Friend** es una aplicación web que permite asignar un amigo secreto de manera aleatoria a cada persona en una lista. Los usuarios pueden ingresar los nombres de sus amigos de forma manual, y al hacer clic en el botón "Adicionar", los nombres se van agregando a la lista. Una vez que todos los nombres han sido ingresados, el usuario puede hacer clic en el botón **Sortear Amigo** para comenzar el sorteo. Cada vez que se presiona este botón, se muestra un amigo con su respectivo amigo secreto, y el proceso continúa hasta que todos los amigos hayan sido sorteados. El juego también tiene la opción de reiniciar.
+El juego **Secret Friend** es una aplicación web que permite asignar un amigo secreto de manera aleatoria a cada persona en una lista. Los usuarios pueden ingresar los nombres de sus amigos de forma manual, y al hacer clic en el botón "Añadir", los nombres se van agregando a la lista. Una vez que todos los nombres han sido ingresados, el usuario puede hacer clic en el botón **Sortear Amigo** para comenzar el sorteo. Cada vez que se presiona este botón, se muestra un amigo con su respectivo amigo secreto, y el proceso continúa hasta que todos los amigos hayan sido sorteados. El juego también tiene la opción de reiniciar.
 
 Este programa está desarrollado en **JavaScript** y **HTML**.
 
